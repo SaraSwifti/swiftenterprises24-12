@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import renewFuelGraph from '@/public/images/researching/RenewFuelGraph.png';
+import renewFuelGraph from '@/public/images/researching/comparisonmesit.png';
 import swiftFuelVisual from '@/public/images/researching/SwiftFuelVisual.jpg';
 
 
@@ -43,13 +43,15 @@ const RenewableFuels = () => {
                 storage damage compared to the use of 10% ethanol. All of these
                 fuel options are drop-in replacements.
               </p>
-              <figure className='mt-16'>
-                <img
-                  className='h-50 w-50 '
-                  src={renewFuelGraph}
-                  alt='Graph with wh/Liter on the y-axis and Wh/Kg on the x-axis researcg points plotted along the way'
-                />
-              </figure>
+              <Image
+                className='h-50 w-50 rounded-xl bg-gray-50 '
+                        src={ renewFuelGraph }
+                        alt='Graph with wh/Liter on the y-axis and Wh/Kg on the x-axis'
+                        width='0'
+                        height='0'
+                        sizes='100vw'
+              />
+                
               <>
                
                     <h1 className='mt-2 text-3xl font-bold tracking-tight text-blue-700 sm:text-4xl'>
@@ -67,7 +69,8 @@ const RenewableFuels = () => {
   
                     <h1 className='mt-2 text-3xl font-bold tracking-tight text-blue-700 sm:text-4xl'>
                       Production
-                    </h1>
+                </h1>
+                <div className='grid-col-2'>
                     <p className='mt-6 text-lg'>
                       The essential ingredient is mesitylene in all of the
                       compositions. Conventional chemical processing has shown
@@ -79,12 +82,16 @@ const RenewableFuels = () => {
                       acetone, ethanol, and other renewable feedstocks.
                     </p>
                  
-                    <Image
-                      className='h-100 w-50 '
-                      alt='clear glass bottle labeled SF-100 halfway filled with a clear fuel'
-                      src={swiftFuelVisual}
-                    />
-               
+          
+                  <Image
+                className='h-50 w-40 rounded-xl  bg-gray-50 '
+                        src={ swiftFuelVisual }
+                        alt='Graph with wh/Liter on the y-axis and Wh/Kg on the x-axis'
+                        width='100'
+                        height='100'
+                       
+              />
+               </div>
               </>
             </div>
           </div>
